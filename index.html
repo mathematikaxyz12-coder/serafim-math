@@ -650,6 +650,11 @@
     }
     @media(prefers-reduced-motion:reduce){.process-track,.carousel-dot,.carousel-arrow{transition:none!important}}
 
+
+    .contact-actions{display:flex;align-items:center;gap:12px;position:relative;z-index:2;flex-wrap:wrap}
+    .contact-actions .btn{margin:0!important}
+    .contact-actions .contact-vk{background:transparent!important;color:#f3f4ee!important;border:1px solid rgba(196,244,81,.48)!important;box-shadow:none!important}
+    @media(max-width:680px){.contact-actions{margin-top:25px;align-items:stretch;flex-direction:column}.contact-actions .btn{width:100%;box-sizing:border-box}}
 </style>
 </head>
 <body>
@@ -771,9 +776,13 @@
     <div class="wrap">
       <div class="contact-box reveal">
         <div><div class="kicker" style="color:#b7f23b">Первый шаг</div><h2>Начнём с разговора?</h2><p>Напишите, в каком классе учится ребёнок и к чему хотите подготовиться.</p></div>
-        <a class="btn" href="https://t.me/TyumenChristian" target="_blank" rel="noopener">Написать Серафиму ↗</a>
+        <div class="contact-actions">
+          <a class="btn" href="https://t.me/TyumenChristian" target="_blank" rel="noopener">Telegram ↗</a>
+          <a class="btn contact-vk" href="https://vk.ru/id782905123" target="_blank" rel="noopener">ВКонтакте ↗</a>
+          <a class="btn contact-max" href="https://max.ru/u/f9LHodD0cOKHIFOH-SRzKWgu7Zg-BpE7sDCCAhgEv1T9fF8WJWU5l5Phq5Y" target="_blank" rel="noopener">MAX ↗</a>
+        </div>
       </div>
-      <p style="font-size:10px;color:#98a2b3;margin:13px 4px 0">Связь напрямую в Telegram.</p>
+      <p style="font-size:10px;color:#98a2b3;margin:13px 4px 0">Выберите удобный способ связи: Telegram, ВКонтакте или MAX.</p>
     </div>
   </section>
 </main>
