@@ -655,6 +655,17 @@
     .contact-actions .btn{margin:0!important}
     .contact-actions .contact-vk{background:transparent!important;color:#f3f4ee!important;border:1px solid rgba(196,244,81,.48)!important;box-shadow:none!important}
     @media(max-width:680px){.contact-actions{margin-top:25px;align-items:stretch;flex-direction:column}.contact-actions .btn{width:100%;box-sizing:border-box}}
+
+    /* Блок стоимости */
+    .price-section{background:radial-gradient(ellipse at 18% 55%,rgba(196,244,81,.055),transparent 35%),#090a08}
+    .price-card{max-width:560px;padding:clamp(28px,5vw,48px);background:linear-gradient(145deg,#171b12,#10120d);border:1px solid rgba(196,244,81,.32);border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.25)}
+    .price-label{color:var(--lime);font:700 11px 'DM Sans',sans-serif;letter-spacing:2px}
+    .price-value{margin-top:22px;color:#f5f6f1;font:800 clamp(58px,9vw,82px)/1 'Syne',sans-serif;letter-spacing:-.07em}
+    .price-value span{color:var(--lime)}
+    .price-duration{margin-top:8px;color:#a4a79d;font-size:14px}
+    .price-divider{height:1px;background:rgba(255,255,255,.12);margin:28px 0}
+    .price-card p{max-width:430px;color:#a4a79d;font-size:14px;line-height:1.8;margin-bottom:26px}
+
 </style>
 </head>
 <body>
@@ -662,7 +673,7 @@
   <div class="wrap nav">
     <a class="brand" href="#top">SERAFIM<span>.</span>MATH</a>
     <nav class="links" id="navLinks">
-      <a href="#about">Обо мне</a><a href="#achievements">Достижения</a><a href="#subjects">Направления</a><a href="#format">Формат занятий</a>
+      <a href="#about">Обо мне</a><a href="#achievements">Достижения</a><a href="#subjects">Направления</a><a href="#format">Формат занятий</a><a href="#price">Стоимость</a>
     </nav>
     <a class="nav-cta" href="#contact">Записаться <span>↗</span></a>
     <button class="menu" id="menuBtn" aria-label="Открыть меню">☰</button>
@@ -768,6 +779,25 @@
       <div class="format-grid">
         <article class="format primary reveal"><span class="format-tag">Основной формат</span><h3>Очно</h3><p>Занятия при личной встрече. Место и расписание согласуем индивидуально.</p></article>
         <article class="format reveal"><span class="format-tag">Также доступно</span><h3>Онлайн</h3><p>Дистанционные занятия, если так удобнее ученику и родителям.</p></article>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="price" class="price-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Стоимость занятий</div>
+        <h2>Понятная цена — без сюрпризов</h2>
+        <p>Индивидуальные занятия по олимпиадной математике.</p>
+      </div>
+      <div class="price-card reveal">
+        <div class="price-label">ИНДИВИДУАЛЬНОЕ ЗАНЯТИЕ</div>
+        <div class="price-value">500 <span>₽</span></div>
+        <div class="price-duration">за 60 минут</div>
+        <div class="price-divider"></div>
+        <p>Персональная работа с учеником, разбор задач и подготовка к олимпиадам и поступлению в ФМШ ТО.</p>
+        <a class="btn" href="#contact">Записаться <span>↗</span></a>
       </div>
     </div>
   </section>
